@@ -1,0 +1,17 @@
+import random
+a=int(input("enter no.of teams: "))
+teams=[]
+for i in range(a):
+    t=input("enter teams name :")
+    teams.append(t)
+match=[]
+meet=int(input("enter no of meets : "))
+for i in range(0,a-1):
+    for j in range(i+1,a):
+        for k in range(meet):
+            match.append([teams[i],teams[j]])
+random.shuffle(match)
+pos=1
+for i in match:
+    print("match {} : {} vs {}".format(pos,i[0],i[1]))
+    pos+=1
