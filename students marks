@@ -1,0 +1,15 @@
+n=["raM","RAJ","rose"]
+m=[[30,40,50],[66,77,55],[33,78,90]]
+pos=1
+for i in range(3):
+    d=sum(m[i])//3
+    if d>80:
+        g="s"
+    elif d<=40:
+        g="fail"
+    elif d>40 and d<60:
+        g="b"
+    else:
+        g="a"
+    print("{}.{} has scored {}% - {} grade".format(pos,n[i].title(),d,g))
+    pos+=1
