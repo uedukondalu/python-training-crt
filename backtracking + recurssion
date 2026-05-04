@@ -1,0 +1,8 @@
+def flower(a):
+    if a==1:
+        return 
+    a-=1
+    flower(a)
+    print("hai",end=" ")
+    flower(a)                                                                  
+flower(5)
