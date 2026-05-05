@@ -1,0 +1,17 @@
+#area of circle using constructor and list
+
+class cricle:
+  def __init__ (self):
+    r=int(input("enter radius: "))
+    self.x=r
+  def display(self):
+    print("area of circle: ",3.14*self.x**2)
+
+
+a=int(input("enter no.of circles: "))
+l=[]
+for i in range(a):
+  c=cricle()
+  l.append(c)
+  c.display()
+  print("_____________")
