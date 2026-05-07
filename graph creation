@@ -1,0 +1,10 @@
+#numpy used for img interpretation 
+import numpy as np
+import matplotlib.pyplot as plt
+overs=np.arange(1,8)
+scores=[20,30,25,46,34,56,65]
+plt.bar(overs,scores,color="green")
+plt.title("India score")
+plt.xlabel("overs")
+plt.ylabel("score")
+plt.show()
