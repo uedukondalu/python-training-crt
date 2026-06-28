@@ -1,6 +1,4 @@
 #area of circle using constructor and list
-ll
-
 class cricle:
   def __init__ (self):
     r=int(input("enter radius: "))
